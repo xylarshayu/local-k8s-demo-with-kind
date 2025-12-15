@@ -1,0 +1,4 @@
+app:
+  message: "Ahoy from QA environment!"
+ingress:
+  host: "qa.demo.first-kind-kluster.local"

@@ -1,0 +1,21 @@
+replicaCount: 1
+image:
+  repository: hashicorp/http-echo
+  tag: latest
+  pullPolicy: IfNotPresent
+app:
+  message: "Default message from values.yaml"
+service:
+  port: 80
+  targetPort: 5678
+ingress:
+  enabled: true
+  className: nginx
+  host: "demo.first-kind-kluster.local"
+resources:
+  limits:
+    cpu: 500m
+    memory: 128Mi
+  requests:
+    cpu: 250m
+    memory: 64Mi

@@ -1,0 +1,4 @@
+app:
+  message: "Ahoy from dev environment!"
+ingress:
+  host: "dev.demo.first-kind-kluster.local"
